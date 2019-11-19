@@ -13,3 +13,8 @@ def LoadFile(string):
 def UpdateString(string1, string2, num):
     return string1[:num] + string2 + string1[num + 1:]
 
+def FindWordCount(mylist, string):
+    with open(mylist, 'r') as myfile:
+        newfile = myfile.read()
+        occurence = newfile.count(string)
+        return occurence
