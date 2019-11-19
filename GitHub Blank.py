@@ -37,6 +37,14 @@ def Union(list1,list2):
     newlist = list1 + list2
     return newlist
 
+def Intersection(list1, list2):
+    new_list = []
+    for player in list1:
+        for person in list2:
+            if person == player:
+                new_list.append(person)
+    print(new_list)
+
 
 
     
