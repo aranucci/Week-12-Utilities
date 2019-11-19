@@ -10,3 +10,6 @@ def LoadFile(string):
         mylist = myfile.readlines()
         return mylist
         
+def UpdateString(string1, string2, num):
+    return string1[:num] + string2 + string1[num + 1:]
+
