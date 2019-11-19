@@ -45,7 +45,12 @@ def Intersection(list1, list2):
                 new_list.append(person)
     print(new_list)
 
-
+def NotIn(list1, list2):
+    new_list = []
+    for player in list1:
+            if player not in list2:
+                new_list.append(player)
+    print(new_list)    
 
     
     
