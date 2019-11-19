@@ -5,3 +5,8 @@
 def PrintOutput(string):
     print('OUTPUT', string)
     
+def LoadFile(string):
+    with open(string, 'r') as myfile:
+        mylist = myfile.readlines()
+        return mylist
+        
