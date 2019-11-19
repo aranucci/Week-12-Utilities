@@ -18,3 +18,21 @@ def FindWordCount(mylist, string):
         newfile = myfile.read()
         occurence = newfile.count(string)
         return occurence
+
+def ScoreFinder(players, scores, child):
+    counter = 0
+    Bool = False
+    for person in players:
+        if person.lower() == child.lower():
+            Bool = True
+            playerscore = scores[counter]
+            player = players[counter]
+        counter += 1
+    if Bool == False:
+        print('player not found')
+    else:
+        print(player, 'got a score of', playerscore)
+
+
+    
+    
