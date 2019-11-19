@@ -33,6 +33,11 @@ def ScoreFinder(players, scores, child):
     else:
         print(player, 'got a score of', playerscore)
 
+def Union(list1,list2):
+    newlist = list1 + list2
+    return newlist
+
+
 
     
     
